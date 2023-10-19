@@ -1,0 +1,63 @@
+
+html{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,227,227,1) 100%);
+}
+h1{
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 60px;
+}
+
+h2{
+    font-family: 'Righteous';
+    text-align: center;
+    font-size: 30px;
+}
+h3{
+    text-align: center;
+}
+p{
+    font-family: Arial;
+    text-align: center;
+}
+ul{
+    font-family: Arial;
+}
+header{
+    background-color: rgb(161, 21, 21);
+    padding: 30px;
+}
+header>h1 {
+    color: white;
+}
+nav{
+    text-align: center;
+}
+nav>a{
+    color: white;
+    font-family: Arial;
+}
+table{
+    border-collapse: collapse;
+    border-color: rgb(161, 21, 21);
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    background-color: rgb(161, 21, 21);
+}
+ul{
+    text-align: center;
+    padding: 0px;
+}
+li>a{
+    text-align: center;
+}
+li{
+    list-style-type: none;
+}
+header>h2 {
+    color: white;
+}
