@@ -5,47 +5,57 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/style.css">
-        <title>Manual de Git - Comandos</title>
+        <title>Manual de Git - COMANDOS</title>
     </head>
     <body>
         <header>
-            <h1>Manual de Git</h1>
+            <h1>Manual de Git</h1><br>
             <nav>
-                <a href="">HOME</a>
-                <a href="">Comandos</a>
+                <a href="../index.html">HOME</a>
+                <a href="page2.html">COMANDOS</a>
             </nav>
         </header>
-        <h2>Índice</h2>
-        <ul>
-            <li><a href="">Git Add</a></li>
-            <li><a href="">Git Commit</a></li>
-            <li><a href="">Git Log</a></li>
-            <li><a href="">Git Remote</a></li>
-            <li><a href="">Git Status</a></li>
-            <li><a href="">Git Push, Clone e Pull</a></li>
-            <li><a href="">Git Reset</a></li>
-        </ul>
-            <article>
+        <main>
+            <div>
+                <h2>Índice</h2>
+                <ul>
+                <li><a href="#git add">Git Add</a></li>
+                <li><a href="#git commit">Git Commit</a></li>
+                <li><a href="#git log">Git Log</a></li>
+                <li><a href="#git remote">Git Remote</a></li>
+                <li><a href="#git p c p">Git Push, Clone e Pull</a></li>
+                <li><a href="#git reset">Git Reset</a></li>
+                </ul>
+            </div>
+            <section>
+                <a id="git add"></a>
                 <h2>Git Add</h2>
                 <h3>git add (nome da pasta/arquivo)</h3>
-                <p>Adiciona o arquivo ou pasta ao git, ficando disponível para rastreamento.</p>
+                <p>Adiciona o arquivo ou pasta especificado ao Git, ficando disponível para rastreamento.</p>
 
                 <h3>git add .</h3>
                 <p>Adiciona todos os novos arquivos ao git, ficando disponível para rastreamento.</p>
-                <h3></h3>
-            </article>
-            <article>
+
+                <h3>git status</h3>
+                <p>Exibe o estado do diretório de trabalho e da stage area, além de mostrar quais arquivos não estão sendo rastreados pelo Git.</p>
+            </section>
+            <section>
+                <a id="git commit"></a>
                 <h2>Git Commit</h2>
                 <h3>git commit</h3>
-                <p>Confirma e valida a alteração para o git + abre um editor de texto para fazer um comentário.</p>
+                <p>Confirma e valida a alteração para o Git + abre um editor de texto para fazer um comentário.</p>
 
                 <h3>git commit -m “(mensagem)”</h3>
-                <p>Confirma e valida a alteração para o git, porém, diferente do comando anterior, já é possivel escrever a mensagem diretamente sem o editor de texto.</p>
+                <p>Confirma e valida a alteração para o Git, porém, diferente do comando anterior, já é possivel escrever a mensagem diretamente sem o editor de texto.</p>
 
                 <h3>git commit --amend -m “(mensagem)”</h3>
                 <p>Para modificar a mensagem do último commit.</p>
-            </article>
-            <article>
+
+                <h3>git commit -a -m "(mensagem)"</h3>
+                <p>Para adicionar todos os novos arquivos ao Git e escrever um comentário diretamente.</p>
+            </section>
+            <section>
+                <a id="git log"></a>
                 <h2>Git Log</h2>
                 <h3>git log</h3>
                 <p>Para visualizar o log e ver todas as mudanças do arquivo.</p>
@@ -61,8 +71,9 @@
 
                 <h3>git log --grep “(mensagem)”</h3>
                 <p>Filtrar para ver os commits baseado em uma palavra chave que contém no comentário. É sensível a caixa.</p>
-            </article>
-            <article>
+            </section>
+            <section>
+                <a id="git remote"></a>
                 <h2>Git Remote</h2>
                 <h3>git remote</h3>
                 <p>Para visualizar o nome do repositório remoto ao qual o projeto está ligado.</p>
@@ -78,6 +89,36 @@
 
                 <h3>git remote rename “(nome atual)” "(nome novo)”</h3>
                 <p>Renomear um repositório remoto.</p>
-            </article>
+            </section>
+            <section>
+                <a id="git p c p"></a>
+                <h2>Git Push, Clone e Pull</h2>
+
+                <h3>git push (nome do repositório remoto) main</h3>
+                <p>Para enviar o conteúdo da branch main local para o repositório remoto vinculado.</p>
+
+                <h3>git clone (link do projeto no github)</h3>
+                <p>Para clonar o repositório de um projeto</p>
+
+                <h3>git pull</h3>
+                <p>Para atualizar o clone que você tem com a versão mais recente presente no github.</p>
+            </section>
+            <section>
+                <a id="git reset"></a>
+                <h2>Git Reset</h2>
+
+                <h3>git reset HEAD~(número de commits que você quer voltar) --soft </h3>
+                <p>Para desfazer alterações de forma leve, retornar o arquivo para a “stage area”, apenas retirando os commits.</p>
+
+                <h3>git reset HEAD~(número de commits que você quer voltar)</h3>
+                <p>Para desfazer alterações de forma “mixed”, retornar o arquivo para o “limbo”, não rastreável.</p>
+
+                <h3>git reset HEAD~(número de commits que você quer voltar) --hard</h3>
+                <p>Para desfazer alterações de forma severa, excluir totalmente a alteração.</p>
+            </section>
+        </main>
+        <footer>
+            .
+        </footer>
     </body>
 </html>
