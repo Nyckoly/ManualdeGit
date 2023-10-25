@@ -48,7 +48,7 @@ header{
 }
 header>h1 {
     color: white;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 header>h2 {
     color: white;
@@ -120,5 +120,30 @@ li>a:hover{
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
-
+}
+.centro{
+    display: flex;
+    flex-direction: column;
+    height: 68vh;
+    justify-content: center;
+    
+}
+.documentacao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.documentacao a{
+    margin-top: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border:rgb(131, 15, 15) solid 6px;
+    background-color: rgb(131, 15, 15);
+    border-radius: 30px;
+}
+.documentacao a:hover{
+    text-shadow: 0px 0px 1px;
 }
